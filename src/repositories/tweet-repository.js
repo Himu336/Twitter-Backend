@@ -1,5 +1,5 @@
-import CrudRespository from "./crud-repository";
-import { Tweet } from "../models";
+import CrudRespository from "./crud-repository.js";
+import Tweet from "../models/tweet.js";
 
 class TweetRepository extends CrudRespository {
     constructor(){

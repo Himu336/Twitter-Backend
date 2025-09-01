@@ -1,5 +1,5 @@
 import { StatusCodes } from "http-status-codes";
-import AppError from "../errors/app-error.js";
+import AppError from "../utils/errors/app-error.js";
 
 class CrudRepository {
     constructor(model) {
