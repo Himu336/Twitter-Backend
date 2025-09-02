@@ -25,7 +25,9 @@ async function signIn(data) {
         if (!passwordMatch) {
             throw new AppError('Password is incorrect', StatusCodes.BAD_REQUEST);
         }
-        return user;
+        const jwtToken = user.genJWT();
+        return jwtToken;
+
     } catch (error) {
         console.log(error);
         if (error.statusCode == StatusCodes.NOT_FOUND) {
