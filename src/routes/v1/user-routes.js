@@ -7,4 +7,8 @@ router.post('/signup',
     UserController.signUp
 );
 
+router.post('/login',
+    UserController.signIn
+);
+
 export default router;

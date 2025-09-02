@@ -5,6 +5,11 @@ class LikeRepository extends CrudRespository {
     constructor(){
         super(Like);
     }
+
+    async findBy(data) {
+        const response = await Like.findOne(data);
+        return response;
+    };
 }
 
 export default LikeRepository;
